@@ -22,6 +22,7 @@
 #include <Arduino.h>
 
 // --- General Settings
+
 const uint16_t 
 	Num_Leds   =  80;         // strip length
 const uint8_t
@@ -30,7 +31,7 @@ const uint8_t
 // --- FastLED Setings
 #define LED_TYPE     WS2812B  // led strip type for FastLED
 #define COLOR_ORDER  GRB      // color order for bitbang
-#define PIN_DATA     6        // led data output pin
+#define PIN_DATA     1        // led data output pin
 // #define PIN_CLOCK  7       // led data clock pin (uncomment if you're using a 4-wire LED type)
 
 // --- Serial Settings
@@ -42,6 +43,7 @@ const uint16_t
 // --- Optional Settings (uncomment to add)
 #define SERIAL_FLUSH          // Serial buffer cleared on LED latch
 // #define CLEAR_ON_START     // LEDs are cleared on reset
+//#define GROUND_PIN 10      // additional grounding pin (optional)
 
 // --- Debug Settings (uncomment to add)
 // #define DEBUG_LED 13       // toggles the Arduino's built-in LED on header match
